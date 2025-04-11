@@ -3,37 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Semanas de Clases</title>
+  <title>Acceso por Semanas</title>
   <style>
     body {
-      background-color: #e0f9e0;
-      font-family: 'Segoe UI', sans-serif;
-      padding: 30px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5fff5;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px 10px;
       text-align: center;
     }
 
-    h1 {
-      color: #006400;
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+    header h1 {
+      margin: 5px;
+      font-size: 24px;
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-bottom: 30px;
     }
 
     .semana {
-      margin: 15px auto;
-      width: 250px;
       background-color: #4caf50;
-      border-radius: 15px;
-      padding: 20px;
+      border-radius: 12px;
+      padding: 25px;
       color: white;
+      text-align: center;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 18px;
       box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s, transform 0.2s;
+      transition: 0.3s;
     }
 
     .semana:hover {
       background-color: #388e3c;
-      transform: scale(1.03);
+      transform: scale(1.05);
     }
 
     .semana a {
@@ -41,31 +64,62 @@
       text-decoration: none;
       display: block;
     }
+
+    footer {
+      background-color: #c8e6c9;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #2e7d32;
+    }
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <h1>UNIVERSIDAD PERUANA LOS ANDES</h1>
-  <h2>Acceso por Semana</h2>
+  <header>
+    <h1>UNIVERSIDAD PERUANA LOS ANDES</h1>
+    <h2>Facultad de Ingeniería de Sistemas</h2>
+  </header>
 
-  <div class="semana"><a href="https://www.canva.com/design/DAGjh37ukPY/MzHNJTeMPH0zKxudSmZJfg/edit?utm_content=DAGjh37ukPY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Semana 1</a></div>
-  <div class="semana"><a href="https://docs.google.com/spreadsheets/d/1pBVAdYDe_Jije_1IUAO7YLJ994ycCLcqDv8tEFynF6I/edit?usp=sharing">Semana 2</a></div>
-  <div class="semana"><a href="">Semana 3</a></div>
-  <div class="semana"><a href="https://link-a-diagrama1.com" target="_blank">Semana 4</a></div>
-  <div class="semana"><a href="https://link-a-diagrama2.com" target="_blank">Semana 5</a></div>
-  <div class="semana"><a href="https://link-a-diagrama3.com" target="_blank">Semana 6</a></div>
-  <div class="semana"><a href="https://link-a-semana1parte1.com" target="_blank">Semana 7</a></div>
-  <div class="semana"><a href="https://link-a-semana1parte2.com" target="_blank">Semana 8</a></div>
-  <div class="semana"><a href="https://link-a-semana1parte3.com" target="_blank">Semana 9</a></div>
-  <div class="semana"><a href="https://example.com/semana10" target="_blank">Semana 10</a></div>
-  <div class="semana"><a href="https://example.com/semana11" target="_blank">Semana 11</a></div>
-  <div class="semana"><a href="https://example.com/semana12" target="_blank">Semana 12</a></div>
-  <div class="semana"><a href="https://example.com/semana13" target="_blank">Semana 13</a></div>
-  <div class="semana"><a href="https://example.com/semana14" target="_blank">Semana 14</a></div>
-  <div class="semana"><a href="https://example.com/semana15" target="_blank">Semana 15</a></div>
-  <div class="semana"><a href="https://example.com/semana16" target="_blank">Semana 16</a></div>
-  <div class="semana"><a href="https://example.com/semana17" target="_blank">Semana 17</a></div>
-  <div class="semana"><a href="https://example.com/semana18" target="_blank">Semana 18</a></div>
+  <main>
+    <h2 style="text-align: center; color: #2e7d32;">Acceso a materiales por semana</h2>
+    <div class="grid-container">
+      <div class="semana"><a href="https://www.canva.com/design/DAGjh37ukPY/MzHNJTeMPH0zKxudSmZJfg/edit?utm_content=DAGjh37ukPY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Semana 1</a></div>
+      <div class="semana"><a href="https://docs.google.com/spreadsheets/d/1q2PWKAQyrFWjuMxaasxv2RVvSMqfXSxtuGkgbmQcaTo/edit?usp=sharing" target="_blank">Semana 2</a></div>
+      <div class="semana"><a href="https://docs.google.com/spreadsheets/d/1jTmcK6P9HxpJVfXkYvbw1yW1Y_H7-SSSKFzUCN8DGEw/edit?usp=sharing" target="_blank">Semana 3</a></div>
+      <div class="semana"><a href="https://link-a-diagrama1.com" target="_blank">Semana 4</a></div>
+      <div class="semana"><a href="https://link-a-diagrama2.com" target="_blank">Semana 5</a></div>
+      <div class="semana"><a href="https://link-a-diagrama3.com" target="_blank">Semana 6</a></div>
+      <div class="semana"><a href="https://link-a-semana1parte1.com" target="_blank">Semana 7</a></div>
+      <div class="semana"><a href="https://link-a-semana1parte2.com" target="_blank">Semana 8</a></div>
+      <div class="semana"><a href="https://link-a-semana1parte3.com" target="_blank">Semana 9</a></div>
+      <div class="semana"><a href="https://example.com/semana10" target="_blank">Semana 10</a></div>
+      <div class="semana"><a href="https://example.com/semana11" target="_blank">Semana 11</a></div>
+      <div class="semana"><a href="https://example.com/semana12" target="_blank">Semana 12</a></div>
+      <div class="semana"><a href="https://example.com/semana13" target="_blank">Semana 13</a></div>
+      <div class="semana"><a href="https://example.com/semana14" target="_blank">Semana 14</a></div>
+      <div class="semana"><a href="https://example.com/semana15" target="_blank">Semana 15</a></div>
+      <div class="semana"><a href="https://example.com/semana16" target="_blank">Semana 16</a></div>
+      <div class="semana"><a href="https://example.com/semana17" target="_blank">Semana 17</a></div>
+      <div class="semana"><a href="https://example.com/semana18" target="_blank">Semana 18</a></div>
+    </div>
+  </main>
+
+  <footer>
+    Página elaborada por Jesús – Abril 2025
+  </footer>
 
 </body>
 </html>
