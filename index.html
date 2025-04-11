@@ -8,19 +8,19 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f5fff5;
+      background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
     }
 
     header {
-      background-color: #2e7d32;
+      background-color: #1b5e20;
       color: white;
-      padding: 20px 10px;
+      padding: 25px 10px;
       text-align: center;
     }
 
     header h1 {
       margin: 5px;
-      font-size: 24px;
+      font-size: 26px;
     }
 
     header h2 {
@@ -30,33 +30,39 @@
     }
 
     main {
-      padding: 20px;
+      padding: 30px 20px;
+    }
+
+    h2.titulo {
+      text-align: center;
+      color: #1b5e20;
+      font-size: 24px;
+      margin-bottom: 30px;
     }
 
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding-bottom: 30px;
     }
 
     .semana {
-      background-color: #4caf50;
-      border-radius: 12px;
-      padding: 25px;
+      background: linear-gradient(135deg, #81c784, #64b5f6);
+      border-radius: 16px;
+      padding: 30px;
       color: white;
       text-align: center;
       font-weight: bold;
       font-size: 18px;
-      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-      transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .semana:hover {
-      background-color: #388e3c;
-      transform: scale(1.05);
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
     }
 
     .semana a {
@@ -66,23 +72,12 @@
     }
 
     footer {
-      background-color: #c8e6c9;
-      padding: 15px;
+      background-color: #a5d6a7;
+      padding: 18px;
       text-align: center;
       font-size: 14px;
-      color: #2e7d32;
-    }
-
-    @media (max-width: 768px) {
-      .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .grid-container {
-        grid-template-columns: 1fr;
-      }
+      color: #1b5e20;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -94,11 +89,11 @@
   </header>
 
   <main>
-    <h2 style="text-align: center; color: #2e7d32;">Acceso a materiales por semana</h2>
+    <h2 class="titulo">Accede a cada semana</h2>
     <div class="grid-container">
-      <div class="semana"><a href="https://www.canva.com/design/DAGjh37ukPY/MzHNJTeMPH0zKxudSmZJfg/edit?utm_content=DAGjh37ukPY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Semana 1</a></div>
-      <div class="semana"><a href="https://docs.google.com/spreadsheets/d/1q2PWKAQyrFWjuMxaasxv2RVvSMqfXSxtuGkgbmQcaTo/edit?usp=sharing" target="_blank">Semana 2</a></div>
-      <div class="semana"><a href="https://docs.google.com/spreadsheets/d/1jTmcK6P9HxpJVfXkYvbw1yW1Y_H7-SSSKFzUCN8DGEw/edit?usp=sharing" target="_blank">Semana 3</a></div>
+      <div class="semana"><a href="https://www.canva.com/design/DAGjh37ukPY/MzHNJTeMPH0zKxudSmZJfg/edit" target="_blank">Semana 1</a></div>
+      <div class="semana"><a href="https://docs.google.com/spreadsheets/d/1q2PWKAQyrFWjuMxaasxv2RVvSMqfXSxtuGkgbmQcaTo/edit" target="_blank">Semana 2</a></div>
+      <div class="semana"><a href="https://docs.google.com/spreadsheets/d/1jTmcK6P9HxpJVfXkYvbw1yW1Y_H7-SSSKFzUCN8DGEw/edit" target="_blank">Semana 3</a></div>
       <div class="semana"><a href="https://link-a-diagrama1.com" target="_blank">Semana 4</a></div>
       <div class="semana"><a href="https://link-a-diagrama2.com" target="_blank">Semana 5</a></div>
       <div class="semana"><a href="https://link-a-diagrama3.com" target="_blank">Semana 6</a></div>
@@ -123,6 +118,7 @@
 
 </body>
 </html>
+
 
 
 
