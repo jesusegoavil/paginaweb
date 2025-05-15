@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Acceso por Semanas</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Times New Roman, serif;
       margin: 0;
-      background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+      background: linear-gradient(to bottom right, #f1f8e9, #dcedc8);
     }
 
     header {
-      background-color: #1b5e20;
+      background-color: #2e7d32;
       color: white;
       padding: 25px 10px;
       text-align: center;
@@ -35,44 +35,64 @@
 
     h2.titulo {
       text-align: center;
-      color: #1b5e20;
+      color: #2e7d32;
       font-size: 24px;
       margin-bottom: 30px;
     }
 
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
       max-width: 1200px;
       margin: 0 auto;
     }
 
     .semana {
-      background: linear-gradient(135deg, #81c784, #64b5f6);
-      border-radius: 16px;
-      padding: 30px;
-      color: white;
+      background: #ffffff;
+      border: 2px solid #a5d6a7;
+      border-radius: 14px;
+      padding: 25px;
+      color: #2e7d32;
       text-align: center;
-      font-weight: bold;
-      font-size: 18px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      font-size: 17px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .semana:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
     }
 
-    .semana a {
+    .semana h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #1b5e20;
+    }
+
+    .botones {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .botones a {
+      background-color: #66bb6a;
       color: white;
+      padding: 10px 12px;
+      border-radius: 8px;
       text-decoration: none;
-      display: block;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .botones a:hover {
+      background-color: #388e3c;
     }
 
     footer {
-      background-color: #a5d6a7;
+      background-color: #c8e6c9;
       padding: 18px;
       text-align: center;
       font-size: 14px;
@@ -91,12 +111,42 @@
   <main>
     <h2 class="titulo">Accede a cada semana</h2>
     <div class="grid-container">
-      <div class="semana"><a href="https://www.canva.com/design/DAGjh37ukPY/MzHNJTeMPH0zKxudSmZJfg/edit" target="_blank">Semana 1</a></div>
-      <div class="semana"><a href="https://docs.google.com/spreadsheets/d/1pBVAdYDe_Jije_1IUAO7YLJ994ycCLcqDv8tEFynF6I/edit?usp=sharing">Semana 2</a></div>
-      <div class="semana"><a href="https://lucid.app/lucidspark/8e5dd640-1976-45ab-99bb-7998bd70650c/edit?viewport_loc=-2533%2C-827%2C4795%2C2215%2C0_0&invitationId=inv_54ddc749-173c-4744-b84c-3a72cec9df20"_blank">Semana 3</a></div>
-      <div class="semana"><a href="https://lucid.app/lucidspark/df05b497-7ae5-414d-b337-1c5a6b52ce60/edit?viewport_loc=-139%2C-246%2C2878%2C1315%2C0_0&invitationId=inv_5e363b40-8188-4898-a644-55b5560ebd67" target="_blank">Semana 4</a></div>
-      <div class="semana"><a href="https://link-a-diagrama2.com" target="_blank">Semana 5</a></div>
-      <div class="semana"><a href="https://link-a-diagrama3.com" target="_blank">Semana 6</a></div>
+
+      <div class="semana">
+        <h3>Semana 1</h3>
+        <div class="botones">
+          <a href="https://www.canva.com/design/DAGjh37ukPY/MzHNJTeMPH0zKxudSmZJfg/edit" target="_blank">👁️ Visualizar</a>
+        </div>
+      </div>
+
+      <div class="semana">
+        <h3>Semana 2</h3>
+        <div class="botones">
+          <a href="https://www.canva.com/design/DAGnfLqtzO8/0IwuPNOQxRXaf1nwmh4OHw/edit" target="_blank">👁️ Visualizar</a>
+        </div>
+      </div>
+
+      <div class="semana">
+        <h3>Semana 3</h3>
+        <div class="botones">
+          <a href="https://docs.google.com/spreadsheets/d/1pBVAdYDe_Jije_1IUAO7YLJ994ycCLcqDv8tEFynF6I/edit?usp=sharing" target="_blank">👁️ Visualizar</a>
+        </div>
+      </div>
+
+      <div class="semana">
+        <h3>Semana 4</h3>
+        <div class="botones">
+          <a href="https://www.canva.com/design/DAGnfLgS0sw/GyZI0Tyas3-sNfnl8NsbRg/edit" target="_blank">👁️ Visualizar</a>
+        </div>
+      </div>
+
+      <div class="semana">
+        <h3>Semana 5</h3>
+        <div class="botones">
+          <a href="https://docs.google.com/document/d/1KVs9Tq_eXkpS1V1orCkAST05p7E6MDx3Ktyq3MIgONo/edit?usp=sharing" target="_blank">👁️ Visualizar</a>
+        </div>
+      </div>
+
     </div>
   </main>
 
@@ -106,7 +156,3 @@
 
 </body>
 </html>
-
-
-
-
